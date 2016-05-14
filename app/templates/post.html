@@ -1,0 +1,15 @@
+<h1>{{resultado}}</h1>
+
+<md-button md-no-ink class="button" ng-click="listar()">Get</md-button>
+<md-button md-no-ink class="button" ng-click="listar2()">Post</md-button>
+
+  <table border="2">
+<div>
+  <tr ng-repeat="x in resultado">
+    <td><input type="checkbox" name="name" ng-value="x.chequeado"></td>
+    <td>{{x.title}}</td>
+    <td>{{x.body}}</td>
+  </tr>
+
+</div>
+  </table>

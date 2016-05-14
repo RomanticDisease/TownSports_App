@@ -1,0 +1,10 @@
+<div layout="row" layout-wrap>
+  <div flex="45" ng-repeat="r in restaurantes">
+    <md-card>
+      <img class="center-crop" ng-src="{{r.img}}" alt="Error" style="display:inline;"/>
+      <md-card-content style="display:inline;">
+        <h4 class="md-title"> {{r.name}}</h4>
+      </md-card-content>
+    </md-card>
+  </div>
+</div>
